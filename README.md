@@ -5,30 +5,36 @@ Diffusion Cloud instance.
 
 # Requirements
 * A Diffusion Cloud service, version 6.5.0 or greater.
-    * a new principal in Diffusion Cloud holding role `TOPIC_CONTROL`.
     * Configure your Diffusion Cloud service to allow anonymous sessions.
 * node.js v12.
 * npm v6.
-
+* A Web browser supported by Diffusion.
 
 # Installation
-
 ```
 npm install
 ```
 
-Taylor `public/index.html` line 18 to refer to your own Diffusion Cloud instance.
+Tailor `public/index.html` line 18 to refer to your own Diffusion Cloud instance.
 
 # Execution
 
+## Step 1
+To create string topic `my/topic` with value `hello world!`:
 ```
 npm run pub -- $HOST $USER $PASSWORD my/topic 'hello world!'
 ```
-.. to create string topic `my/topic` with value `hello world!`.
+Where
+* `$HOST` is the hostname of your Diffusion Cloud service, which you can find in your service dashboard.
+* `$USER` will be `admin`, unless you create another principal holding the `TOPIC_CONTROL` role.
+* `$PASSWORD` is the credentials for `$USER`
+
+
+## Step 2
+To run a minimal web server, and open a web browser that subscribes to the same Diffusion Cloud Service and subscribes to topic `my/topic`.
 
 ```
 npm run sub
 ```
-... to run a minimal web server, and open a web browser that subscribes to the same Diffusion Cloud Service and subscribes to topic `my/topic`.
 
-Re-run the publisher to change the value of `my/topic` and see the web-page update.
+Re-run step 1 to change the value of `my/topic` and observe the web-page update.
