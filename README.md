@@ -1,7 +1,6 @@
 # Diffusion Cloud "Hello World"
 
-The briefest of projects, illustrating publication and subscription of test data to and from a
-Diffusion Cloud instance.
+The briefest of projects, illustrating production and consumption of test data to and from a Diffusion Cloud instance.
 
 # Requirements
 * A Diffusion Cloud service, version 6.5.0 or greater.
@@ -15,7 +14,7 @@ Diffusion Cloud instance.
 npm install
 ```
 
-Tailor `public/index.html` line 18 to refer to your own Diffusion Cloud instance.
+Set lines 18 of `public/index.html` to the hostname of your Diffusion Cloud service, which you can find in your service dashboard.
 
 # Execution
 
