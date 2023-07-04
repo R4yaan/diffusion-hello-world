@@ -30,7 +30,7 @@ To create string topic `my/topic` with value `hello world!`:
 npm run pub -- $HOST $USER $PASSWORD my/topic 'hello world!' $STARTVALUE
 ```
 Where
-* `$HOST` is 'localhost:8080'
+* `$HOST` is 'localhost:8080' if you are running locally, else use the server host name where diffusion is running
 * `$USER` will be `admin`, unless you create another principal holding the `TOPIC_CONTROL` role.
 * `$PASSWORD` is the credentials for `$USER`, which is 'password' by default
 * `$STARTVALUE` is the value you want to start iterating at after 'Hello World '. This can be left  empty to continue iterating
