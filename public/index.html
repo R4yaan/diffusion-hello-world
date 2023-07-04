@@ -12,10 +12,10 @@
 
 </p>
 
-<script src="./node_modules/diffusion/dist/diffusion.js"></script>
+<script src="./clientlib/diffusion-unminified-6.9.1.js"></script>
 <script>
     const TOPIC = 'my/topic';
-    const HOST = 'chatr.eu.diffusion.cloud';
+    const HOST = 'localhost';
 
     const topicNameElem = document.getElementById('topic-name');
     const topicValueElem = document.getElementById('topic-value');
@@ -24,8 +24,8 @@
 
     diffusion.connect({
         host : HOST,
-        port: 443,
-        secure: true
+        port: 8080,
+        secure: false
     }).then(function(session) {
         session
             .addStream(TOPIC, diffusion.datatypes.string())
