@@ -16,9 +16,9 @@ npm install
 code .
 ```
 
-Change HOST on line 18 of `public/index.html` to "localhost" if locally, or to server name where diffusion is running
+Change HOST on line 18 of `public/index.html` to "localhost" if installed locally, or to the server name where diffusion is running on the cloud
 Change the port in line 27 to 8080 or any specific port used by diffusion server
-Change 
+Change secure on line 28 to false
 
 1. Open the directory of the installation of Diffusion, open the folder 'clients', then 'js'
 2. Copy the diffusion uniminified file and paste it into 'public/clientlib'
@@ -26,7 +26,7 @@ Change
 
 # Execution
 
-## Step 1
+## Step 1 - Running publisher
 To create string topic `my/topic` with value `hello world!`:
 ```
 npm run pub -- $HOST $USER $PASSWORD my/topic 'hello world!' $STARTVALUE
@@ -38,7 +38,7 @@ Where
 * `$STARTVALUE` is the value you want to start iterating at after 'Hello World '. This can be left  empty to continue iterating
 
 
-## Step 2
+## Step 2 - Accessing the web console
 Go to 'localhost:8080' on a web browser
 Click 'Go to console'
 Enter login information (Default - admin/password)
@@ -46,11 +46,12 @@ Go to the Topics section
 In the Topic Browser, find my/topic and click on it
 The current value should be 'hello world!'
 
-Alternatively:
+
+## Step 3 - Running subscriber
 ```
 npm run sub
 ```
 This opens a webpage showing the value of my/topic
 
 
-Re-run step 1 to change the value of `my/topic` and observe both web-pages update.
+Re-run step 1 to change the value of `my/topic` and observe both web pages update.
