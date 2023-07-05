@@ -1,6 +1,6 @@
 # Diffusion "Hello World"
 
-The briefest of projects, illustrating publishing and consumption of test data to and from a Diffusion instance.
+The briefest of projects, illustrating publishing and subscribing of test data to and from a Diffusion instance.
 
 # Requirements
 * A Diffusion instance or cluster running locally, remotely or on the cloud
