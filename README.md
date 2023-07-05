@@ -29,7 +29,7 @@ code .
 ## Step 1 - Running publisher
 To create string topic `my/topic` with value `hello world!`:
 ```
-npm run pub -- $HOST $USER $PASSWORD my/topic 'hello world!' $STARTVALUE
+npm run pub -- $HOST $USER $PASSWORD my/topic $STARTVALUE
 ```
 Where
 * `$HOST` is 'localhost:8080' if you are running locally, else use the server host name where diffusion is running
