@@ -16,13 +16,13 @@ npm install
 code .
 ```
 
-Change HOST on line 18 of `public/index.html` to "localhost" if installed locally, or to the server name where diffusion is running on the cloud
-Change the port in line 27 to 8080 or any specific port used by diffusion server
-Change secure on line 28 to false
+1. Change HOST on line 18 of `public/index.html` to "localhost" if installed locally, or to the server name where diffusion is running on the cloud
+2. Change the port in line 27 to 8080 or any specific port used by diffusion server
+3. Change secure on line 28 to false
 
-1. Open the directory of the installation of Diffusion, open the folder 'clients', then 'js'
-2. Copy the diffusion uniminified file and paste it into 'public/clientlib'
-3. Copy the relative path for that file ('./clientlib/diffusion-unminified-6.9.1.js') to replace the url in line 15 of `public/index.html`
+4. Open the directory of the installation of Diffusion, open the folder 'clients', then 'js'
+5. Copy the diffusion uniminified file and paste it into 'public/clientlib'
+6. Copy the relative path for that file ('./clientlib/diffusion-unminified-6.9.1.js') to replace the url in line 15 of `public/index.html`
 
 # Execution
 
