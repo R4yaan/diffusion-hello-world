@@ -17,7 +17,7 @@ code .
 ```
 
 Change HOST on line 18 of `public/index.html` to "localhost" if installed locally, or to the server name where diffusion is running on the cloud
-Change the port in line 27 to 8080 or any specific port used by diffusion server /n Change secure on line 28 to false
+Change the port in line 27 to 8080 or any specific port used by diffusion server \n Change secure on line 28 to false
 
 1. Open the directory of the installation of Diffusion, open the folder 'clients', then 'js'
 2. Copy the diffusion uniminified file and paste it into 'public/clientlib'
